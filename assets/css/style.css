@@ -14,7 +14,6 @@ body{
 
 .body_dash{
     width: 100%;
-    background-color: var(--color-black);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -698,6 +697,392 @@ body{
     display: none;
 }
 
+.logo_background{
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    z-index: -1;
+}
+
+/* ========================== public profile ======================================== */
+.public_dash{
+    width: 100%;
+}
+
+.video-section {
+    padding: 24px;
+    border: 1px solid #222;
+    border-radius: 8px;
+    margin: 16px 0;
+    background-color: #121212;
+    width: 100%;
+}
+
+.video-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--color-white);
+}
+
+.play-button-container {
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+    align-items: center;
+}
+
+.play-button {
+    width: 32px;
+    height: 32px;
+    border: 2px solid orange;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.play-button:hover {
+    background-color: rgba(255, 165, 0, 0.1);
+}
+
+.play-button::before {
+    content: '▶';
+    color: orange;
+    font-size: 14px;
+    margin-left: 3px;
+    margin-top: -2px;
+}
+
+.timeline-wrapper {
+    margin: 16px 0;
+    border: 1px solid #222;
+    border-radius: 8px;
+    background-color: #121212;
+    padding: 0;
+    width: 100%;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #333;
+}
+
+.timeline-header span {
+    font-size: 14px;
+    color: var(--color-white);
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-btn {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: #333;
+    color: #ddd;
+    transition: background 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #444;
+}
+
+  .filter-btn.active {
+    background-color: orange;
+    color: black;
+}
+
+.timeline-content {
+    min-height: 300px;
+    background-color: #0e0e0e;
+}
+
+.thumb_public_profile{
+    padding: 0;
+    width: 100%;
+}
+.photo_user_public{
+    padding: 60px 0;
+    background-color: var(--color-black);
+    flex-wrap: wrap;
+}
+.over_dash_public{
+    flex-wrap: wrap;
+}
+
+.profile-box {
+    padding: 24px;
+    border-radius: 8px;
+    margin: 16px;
+    max-width: 360px;
+}
+
+.follow-stats {
+    font-weight: bold;
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 12px;
+}
+
+.bio-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #eee;
+    margin-bottom: 16px;
+}
+
+.job-info {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: white;
+}
+/* ========================== public profile ======================================== */
+
+
+
+
+
+
+
+
+
+
+
+/* =========================== courses ============================================== */
+.course-container {
+    padding: 32px;
+  }
+
+  .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--color-white);
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 24px;
+  }
+
+  .filter-tags {
+    margin-bottom: 32px;
+  }
+
+  .filter-tags button {
+    background: #1f1f1f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 999px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .filter-tags button.active {
+    background-color: orange;
+    color: var(--color-white);
+    font-weight: 400;
+  }
+
+  .highlighted-course {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #181818;
+    padding: 24px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border: 1px solid orange;
+  }
+
+  .highlight-left {
+    max-width: 60%;
+  }
+
+  .highlight-label {
+    background-color: rgba(255, 165, 0, .4);
+    color: var(--color-white);
+    font-size: 12px;
+    padding: 4px 20px;
+    border-radius: 15px;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-orange);
+  }
+
+  .highlight-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--color-white);
+  }
+
+  .highlight-description {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 16px;
+  }
+
+  .highlight-meta {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 16px;
+    display: flex
+  }
+
+  .highlight-meta strong {
+    color: #fff;
+  }
+
+  .highlight-button {
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 999px;
+    cursor: pointer;
+    color: black;
+  }
+
+  .highlight-right {
+    background: #ccc;
+    width: 200px;
+    height: 140px;
+    border-radius: 8px;
+  }
+
+  .subsection-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .view-all-link {
+    color: orange;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .recommendations {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    margin-bottom: 32px;
+  }
+
+  .card-item {
+    background: #1a1a1a;
+    padding: 16px;
+    border-radius: 10px;
+    min-width: 200px;
+  }
+
+  .card-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .card-author {
+    font-size: 13px;
+    color: #ccc;
+    margin-bottom: 4px;
+  }
+
+  .card-duration {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 8px;
+  }
+
+  .card-label {
+    font-size: 11px;
+    color: #ccc;
+    margin-bottom: 8px;
+  }
+
+  .card-button {
+    background-color: #2c2c2c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+
+  .category-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .category-tags button {
+    background: #2b2b2b;
+    color: #ccc;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .category-tags .active {
+    background: orange;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+  }
+
+  .grid-card {
+    background: #1a1a1a;
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  .thumbnail {
+    width: 100%;
+    height: 150px;
+    background: #ccc;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+/* =========================== courses ============================================== */
+
+
 @media(max-width: 1024px){
     .dash_right{
         width: 100%;
@@ -774,7 +1159,15 @@ body{
     .dash_left{
         width: 55%;
     }
-    
+    .photo_user_public{
+        width: 50%;
+    }
+    .info_user_public{
+        width: 0;
+    }
+    .img_char_public{
+        width: 50%;
+    }
 }
 
 @media(max-width: 600px){
@@ -839,5 +1232,17 @@ body{
     }
     .navbar{
         padding: 12px;
+    }
+    .photo_user_public, .img_char_public{
+        width: 100%;
+    }
+    .thumb_public_profile{
+        padding: 0;
+    }
+    .timeline-container{
+        padding: 10px;
+    }
+    .timeline-header{
+        padding: 10px 0;
     }
 }
