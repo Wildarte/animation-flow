@@ -912,11 +912,17 @@ body{
     justify-content: space-between;
     align-items: center;
     background: #181818;
-    padding: 24px;
+    padding: 50px 150px 50px 24px;
     border-radius: 10px;
     margin-bottom: 40px;
     border: 1px solid orange;
+    position: relative;
   }
+.img-high{
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+}
 
   .highlight-left {
     max-width: 60%;
@@ -971,9 +977,9 @@ body{
 
   .highlight-right {
     background: #ccc;
-    width: 200px;
-    height: 140px;
-    border-radius: 8px;
+    width: 260px;
+    height: 190px;
+    border-radius: 3px;
   }
 
   .subsection-header {
@@ -983,6 +989,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--color-white);
   }
 
   .view-all-link {
@@ -991,38 +998,51 @@ body{
     cursor: pointer;
   }
 
-  .recommendations {
+.recommendations {
     display: flex;
     gap: 12px;
     overflow-x: auto;
     margin-bottom: 32px;
-  }
-
-  .card-item {
-    background: #1a1a1a;
+}
+.over-recommendations{
+    overflow: auto;
+}
+.card-item {
+    background: var(--color-black);
+    border: 1px solid var(--color-dark2);
     padding: 16px;
     border-radius: 10px;
     min-width: 200px;
-  }
-
-  .card-title {
+    width: calc(33%);
+}
+.title-subsection{
+    color: var(--color-white);
+}
+.card-title-course {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 4px;
-  }
+    color: var(--color-white);
+}
 
-  .card-author {
+.card-author {
     font-size: 13px;
     color: #ccc;
     margin-bottom: 4px;
-  }
+}
 
-  .card-duration {
+.card-duration {
     font-size: 12px;
     color: #aaa;
     margin-bottom: 8px;
-  }
-
+    display: flex;
+    justify-content: flex-end;
+}
+.bottom-card-item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
   .card-label {
     font-size: 11px;
     color: #ccc;
@@ -1053,17 +1073,21 @@ body{
     border-radius: 8px;
     font-size: 13px;
     cursor: pointer;
+    border: 1px solid var(--color-dark2);
   }
 
   .category-tags .active {
-    background: orange;
-    color: #000;
+    background: #9f6111;
     font-weight: bold;
+  }
+  .category-tags button{
+  }
+  .category-tags button p{
+    color: var(--color-white);
   }
 
   .course-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
     gap: 16px;
   }
 
@@ -1071,6 +1095,7 @@ body{
     background: #1a1a1a;
     padding: 16px;
     border-radius: 10px;
+    width: calc(33%);
   }
 
   .thumbnail {
