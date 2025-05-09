@@ -1,0 +1,145 @@
+<style>
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.tab {
+  padding: 10px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab.active {
+  background-color: #ffa726;
+}
+
+.scroll-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 150px;
+  background-color: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.thumb {
+  background-color: #ccc;
+  color: #555;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.card-body {
+  background-color: #333;
+  padding: 10px;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.stars {
+  color: #ffa726;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  color: #ffa726;
+}
+
+.add {
+  background-color: #000;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+</style>
+
+
+<div class="tabs">
+    <button class="tab active">Reviews</button>
+    <button class="tab">Character Rigs</button>
+    <button class="tab">Assets</button>
+    <button class="tab">Avatar</button>
+    <button class="tab">Banner</button>
+  </div>
+  
+  <div class="scroll-container">
+    <div class="card">
+      <div class="thumb">220 x 150</div>
+      <div class="card-body">
+        <div class="title">Character Rig: Hero</div>
+        <div class="stars">★★★★★</div>
+        <div class="footer">
+          <span class="price">350</span>
+          <button class="add">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+        <div class="thumb">220 x 150</div>
+        <div class="card-body">
+          <div class="title">Character Rig: Hero</div>
+          <div class="stars">★★★★★</div>
+          <div class="footer">
+            <span class="price">350</span>
+            <button class="add">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="thumb">220 x 150</div>
+        <div class="card-body">
+          <div class="title">Character Rig: Hero</div>
+          <div class="stars">★★★★★</div>
+          <div class="footer">
+            <span class="price">350</span>
+            <button class="add">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="thumb">220 x 150</div>
+        <div class="card-body">
+          <div class="title">Character Rig: Hero</div>
+          <div class="stars">★★★★★</div>
+          <div class="footer">
+            <span class="price">350</span>
+            <button class="add">Add</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  

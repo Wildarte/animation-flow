@@ -22,6 +22,7 @@ body{
     margin: 10px auto;
     width: 1300px;
     display: flex;
+    max-width: 100%
 }
 
 .task {
@@ -923,6 +924,9 @@ body{
     right: -30px;
     bottom: 0;
 }
+.img-high.img-high-2{
+    height: 100%;
+}
 
   .highlight-left {
     max-width: 60%;
@@ -1108,6 +1112,197 @@ body{
 /* =========================== courses ============================================== */
 
 
+/* =========================== Store ================================================ */
+
+.pricing-action {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.btns-pricing-action{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
+.btns-pricing-action button{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.btn-orange {
+    background-color: #ffa726;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+  
+.btn-orange:hover {
+    background-color: #ff9800;
+}
+  
+.btn-dark {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+  
+.btn-dark:hover {
+    background-color: #666;
+}
+  
+.price-tag {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffa726;
+}
+  
+.price-tag .old {
+    font-size: 18px;
+    color: #bbb;
+    text-decoration: line-through;
+}
+  
+.price-tag .coin {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+
+/* === Filtros de Categoria === */
+.tab-menu {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    background-color: #444;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .tab-button.active {
+    background-color: #ffa726;
+  }
+  
+  .tab-button:hover:not(.active) {
+    background-color: #555;
+  }
+  
+  /* === Grade de Produtos === */
+  .item-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  /* === Cartão de Produto === */
+  .product-tile {
+    background-color: #222;
+    border-radius: 12px;
+    width: 150px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-thumbnail {
+    background-color: #ccc;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .product-info {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .product-title {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .rating-stars {
+    color: #ffa726;
+    font-size: 12px;
+  }
+  
+  .product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .token-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+  }
+  
+  .add-button {
+    background-color: #000;
+    color: white;
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid #666;
+    transition: background 0.3s ease;
+  }
+
+.over-min-cards{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.add-button:hover {
+    background-color: #111;
+}
+.cards-in{
+    display: flex;
+    width: 100%
+}
+.cards-in .item-grid{
+    margin-right: 10px
+}
+
+.over-tab-menu{
+    overflow: auto;
+    max-width: 580px;
+    padding: 10px;
+}
+/* ======================== Store ================================================ */  
+
 @media(max-width: 1024px){
     .dash_right{
         width: 100%;
@@ -1269,5 +1464,53 @@ body{
     }
     .timeline-header{
         padding: 10px 0;
+    }
+    .highlight-left{
+        width: 100%;
+        max-width: unset;
+    }
+    .highlighted-course{
+        flex-wrap: wrap;
+        padding: 40px;
+    }
+    .img-high.img-high-2{
+        height: 60%;
+        right: 20px;
+    }
+    .course-container{
+        padding: 10px;
+    }
+    .over-cards-in{
+        overflow-x: auto;
+        max-width: 580px;
+        padding: 10px;
+    }
+    .cards-in{
+        min-width: 580px;
+    }
+    .tab-menu{
+        min-width: 580px;
+    }
+    .img-high{
+        right: 0;
+    }
+    .dash_right_store{
+        padding: 0
+    }
+    .over-min-cards{
+        max-width: 600px;
+        padding: 0;
+    }
+    .category-tags{
+        min-width: 600px
+    }
+    .over-category-tags{
+        overflow: auto;
+    }
+    .over-course-grid{
+        overflow: auto;
+    }
+    .course-grid{
+        min-width: 600px
     }
 }
